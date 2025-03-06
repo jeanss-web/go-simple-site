@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Каталог - FashionStore</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: Arial, sans-serif;
+				line-height: 1.6;
+			}
+
+			header {
+				background-color: #333;
+				padding: 1rem;
+				color: white;
+			}
+
+			nav {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.logo {
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+
+			.menu {
+				display: flex;
+				list-style: none;
+			}
+
+			.menu li {
+				margin-left: 2rem;
+			}
+
+			.menu a {
+				color: white;
+				text-decoration: none;
+			}
+
+			#hero {
+				text-align: center;
+				padding: 4rem 2rem;
+				background-color: #f4f4f4;
+			}
+
+			#catalog {
+				max-width: 1200px;
+				margin: 2rem auto;
+				padding: 0 1rem;
+			}
+
+			.products {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 2rem;
+				margin-top: 2rem;
+			}
+
+			.product-card {
+				text-align: center;
+				padding: 1rem;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+			}
+
+			.product-card img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.product-card button {
+				background-color: #333;
+				color: white;
+				border: none;
+				padding: 0.5rem 1rem;
+				margin-top: 1rem;
+				cursor: pointer;
+				border-radius: 4px;
+			}
+
+			footer {
+				background-color: #333;
+				color: white;
+				padding: 2rem;
+				margin-top: 2rem;
+			}
+
+			.footer-content {
+				max-width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.social-links a {
+				color: white;
+				text-decoration: none;
+				margin-right: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">FashionStore</div>
+				<ul class="menu">
+					<li><a href="/">Главная</a></li>
+					<li><a href="/catalog">Каталог</a></li>
+					<li><a href="/sale">Распродажа</a></li>
+					<li><a href="/contact">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<h1>Каталог товаров</h1>
+			<section id="catalog">
+				<h2>Наши товары</h2>
+				<div class="products">
+					<div class="product-card">
+						<img src="https://via.placeholder.com/200x300" alt="Футболка" />
+						<h3>Футболка базовая</h3>
+						<p>1999 ₽</p>
+						<button>В корзину</button>
+					</div>
+					<div class="product-card">
+						<img src="https://via.placeholder.com/200x300" alt="Джинсы" />
+						<h3>Джинсы классические</h3>
+						<p>3999 ₽</p>
+						<button>В корзину</button>
+					</div>
+					<div class="product-card">
+						<img src="https://via.placeholder.com/200x300" alt="Куртка" />
+						<h3>Куртка демисезонная</h3>
+						<p>5999 ₽</p>
+						<button>В корзину</button>
+					</div>
+					<div class="product-card">
+						<img src="https://via.placeholder.com/200x300" alt="Куртка" />
+						<h3>Куртка демисезонная</h3>
+						<p>5999 ₽</p>
+						<button>В корзину</button>
+					</div>
+					<div class="product-card">
+						<img src="https://via.placeholder.com/200x300" alt="Куртка" />
+						<h3>Куртка демисезонная</h3>
+						<p>5999 ₽</p>
+						<button>В корзину</button>
+					</div>
+					<div class="product-card">
+						<img src="https://via.placeholder.com/200x300" alt="Куртка" />
+						<h3>Куртка демисезонная</h3>
+						<p>5999 ₽</p>
+						<button>В корзину</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-content">
+				<div class="contact-info">
+					<h3>Контакты</h3>
+					<p>Телефон: +7 (999) 123-45-67</p>
+					<p>Email: info@fashionstore.ru</p>
+				</div>
+				<div class="social-links">
+					<h3>Мы в соцсетях</h3>
+					<a href="#">VK</a>
+					<a href="#">Telegram</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
